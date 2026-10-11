@@ -29,7 +29,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY' , 'local-dev-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['stock-u0tp.onrender.com' , 'localhost', '127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = ['https://stock-u0tp.onrender.com']
 
 
 # Application definition
